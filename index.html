@@ -1,60 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <!-- Fonts from google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Fonts from google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
 
-  <title>CSS Challenge | Interactive comments section</title>
+    <title>CSS Challenge | Interactive comments section</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="big-container">
+      <!-- Comment #1 -->
+      <div class="div-one boxstyle">
+        <div class="box-one">
+          <button>
+            <img src="./images/icon-plus.svg" alt="plus-button" />
+          </button>
+          <button>12</button>
+          <button>
+            <img src="./images/icon-minus.svg" alt="minus-button" />
+          </button>
+        </div>
+        <div class="box-two">
+          <img src="./images/avatars/image-amyrobson.png" alt="profile" />
+          <b>amyrobson </b>
+          1 month ago
+          <span>
+            <img src="./images/icon-reply.svg" alt="Reply-button" />
+          </span>
+        </div>
+        <div class="box-three">
+          Impressive! Though it seems the drag feature could be improved. But
+          overall it looks incredible. You've nailed the design and the
+          responsiveness at various breakpoints works really well.
+        </div>
+      </div>
+      <!-- Comment #2 -->
+      <div class="div-two boxstyle">
+        <div class="box-one">
+          <button>
+            <img src="./images/icon-plus.svg" alt="plus-button" />
+          </button>
+          <button>5</button>
+          <button>
+            <img src="./images/icon-minus.svg" alt="minus-button" />
+          </button>
+        </div>
+        <img src="./images/avatars/image-maxblagun.png" alt="profile" />
+        maxblagun 2 weeks ago Woah, your project looks awesome! How long have
+        you been coding for? I'm still new, but think I want to dive into React
+        as well soon. Perhaps you can give me an insight on where I can learn
+        React? Thanks!
+      </div>
+      <!-- Comment #3 (Reply to comment #2) -->
+      <div class="div-three boxstyle">
+        <div class="box-one">
+          <button>
+            <img src="./images/icon-plus.svg" alt="plus-button" />
+          </button>
+          <button>4</button>
+          <button>
+            <img src="./images/icon-minus.svg" alt="minus-button" />
+          </button>
+        </div>
+        <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
+        ramsesmiron 1 week ago @maxblagun If you're still new, I'd recommend
+        focusing on the fundamentals of HTML, CSS, and JS before considering
+        React. It's very tempting to jump ahead but lay a solid foundation
+        first.
+      </div>
+      <!-- Comment #4 (Reply to comment #2) -->
+      <div class="div-four boxstyle">
+        <div class="box-one">
+          <button>
+            <img src="./images/icon-plus.svg" alt="plus-button" />
+          </button>
+          <button>2</button>
+          <button>
+            <img src="./images/icon-minus.svg" alt="minus-button" />
+          </button>
+        </div>
+        <img src="./images/avatars/image-juliusomo.png" alt="profile" />
+        juliusomo 2 days ago @ramsesmiron I couldn't agree more with this.
+        Everything moves so fast and it always seems like everyone knows the
+        newest library/framework. But the fundamentals are what stay constant.
+      </div>
 
-  <!-- Comment #1 -->
-  12
-  <img src="./images/avatars/image-amyrobson.png" alt="profile" />
-  amyrobson 
-  1 month ago
-  Impressive! Though it seems the drag feature could be improved. But overall it looks incredible. You've nailed the design and the responsiveness at various breakpoints works really well.
+      <div class="box-five boxstyle">
+        <div class="box-one"></div>
+        <img src="./images/avatars/image-juliusomo.png" alt="profile-pic" />
+        <div class="box-two"></div>
+      </div>
 
-  <!-- Comment #2 -->
-  5
-  <img src="./images/avatars/image-maxblagun.png" alt="profile" />
-  maxblagun 
-  2 weeks ago
-  Woah, your project looks awesome! How long have you been coding for? I'm still new, but think I want to dive into React as well soon. Perhaps you can give me an insight on where I can learn React? Thanks!
-
-  <!-- Comment #3 (Reply to comment #2) -->
-  4
-  <img src="./images/avatars/image-ramsesmiron.png" alt="profile" />
-  ramsesmiron 
-  1 week ago
-  @maxblagun If you're still new, I'd recommend focusing on the fundamentals of HTML, CSS, and JS before considering React. It's very tempting to jump ahead but lay a solid foundation first.
-
-  <!-- Comment #4 (Reply to comment #2) -->
-  2
-  <img src="./images/avatars/image-juliusomo.png" alt="profile" />
-  juliusomo 
-  2 days ago
-  @ramsesmiron I couldn't agree more with this. Everything moves so fast and it always seems like everyone knows the newest library/framework. But the fundamentals are what stay constant.
-
-
-  
-  <div class="attribution">
-    Challenge adapted from <a href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-</body>
+      <div class="attribution">
+        Challenge adapted from
+        <a
+          href="https://www.frontendmentor.io/challenges/interactive-comments-section-iG1RugEG9"
+          target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="#">Hamza Muhumed</a>.
+      </div>
+    </div>
+  </body>
 </html>
